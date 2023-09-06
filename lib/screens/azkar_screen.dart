@@ -14,7 +14,7 @@ class AzkarScreen extends StatelessWidget {
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: size.width <= 768 ? 1 : 5,
+          childAspectRatio: size.width <= 768 ? 1 : 4,
         ),
         shrinkWrap: true,
         children: const [
