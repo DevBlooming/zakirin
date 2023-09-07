@@ -725,7 +725,7 @@ final List<Map<String, dynamic>>? azanAzkar = zakirinData[4]['azanAzkar'];
 final List<Map<String, dynamic>>? ablutionAzkar =
     zakirinData[5]['ablutionAzkar'];
 
-var azkarCategories = [
+final azkarCategories = [
   Category(
     id: 'c1',
     title: 'أذكار الصباح',
