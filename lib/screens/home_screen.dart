@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/screens/azkar_screen.dart';
+import 'package:zakirin/screens/azkar_categories_screen.dart';
 import 'package:zakirin/theme/pallete.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       // body: const MorningAzkarScreen(),
-      body: const AzkarScreen(),
+      body: const AzkarCategoriesScreen(),
     );
   }
 }

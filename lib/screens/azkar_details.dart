@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/data/data.dart';
 import 'package:zakirin/theme/pallete.dart';
-import 'package:zakirin/widgets/azkar_card_box.dart';
+import 'package:zakirin/widgets/azkar_card_item.dart';
 
-class MorningAzkarScreen extends StatelessWidget {
+class AzkarDetails extends StatelessWidget {
   final String appBarTitle;
+  final List<Map<String, dynamic>>? azkarList;
 
-  const MorningAzkarScreen({
+  const AzkarDetails({
     super.key,
     required this.appBarTitle,
+    required this.azkarList,
   });
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, dynamic>>? morningAzkar =
-        zakirinData[0]['morningAzkar'];
-
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -42,17 +40,14 @@ class MorningAzkarScreen extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: morningAzkar!.length,
+        itemCount: azkarList!.length,
         itemBuilder: (context, index) {
-          String azkarContent = morningAzkar[index]['content'].toString();
-          int azkarCount = morningAzkar[index]['count'];
-
           return SingleChildScrollView(
             child: Column(
               children: [
-                AzkarCardBox(
-                  content: azkarContent,
-                  count: azkarCount,
+                AzkarCardItem(
+                  content: azkarList![index]['content'].toString(),
+                  count: azkarList![index]['count'],
                 ),
               ],
             ),

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:zakirin/theme/pallete.dart';
 
-class AzkarCardBox extends StatefulWidget {
+class AzkarCardItem extends StatefulWidget {
   final String content;
   final int count;
 
-  const AzkarCardBox({
+  const AzkarCardItem({
     super.key,
     required this.content,
     required this.count,
   });
 
   @override
-  State<AzkarCardBox> createState() => _AzkarCardBoxState();
+  State<AzkarCardItem> createState() => _AzkarCardItemState();
 }
 
-class _AzkarCardBoxState extends State<AzkarCardBox> {
+class _AzkarCardItemState extends State<AzkarCardItem> {
   late String azkarContent = widget.content;
   late int buttonNumber = widget.count;
   bool isContainerVisible = true;
@@ -90,9 +90,6 @@ class _AzkarCardBoxState extends State<AzkarCardBox> {
                     ),
                   ),
                 ),
-                // child: AzkarCardButton(
-                //   count: widget.count,
-                // ),
               ),
             ],
           ),
