@@ -35,21 +35,25 @@ class _AzkarCardItemState extends State<AzkarCardItem> {
 
     return Visibility(
       visible: isContainerVisible,
-      child: GestureDetector(
+      child: InkWell(
         onTap: buttonNumber > 0 ? decreaseButtonNumber : null,
+        splashColor: Palette.servQuick2,
+        borderRadius: BorderRadius.circular(16),
         child: Container(
+          alignment: Alignment.center,
           width: size.width <= 768 ? double.infinity : 700,
           padding: const EdgeInsets.all(20.0),
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           decoration: BoxDecoration(
             color: Palette.cardBackgroundColor,
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(16),
           ),
           child: Column(
             children: [
               Text(
                 widget.content,
                 textDirection: TextDirection.rtl,
+                textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontFamily: 'Amiri',
                   fontSize: 18,

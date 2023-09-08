@@ -24,7 +24,8 @@ class AzkarCategoriesScreen extends StatelessWidget {
           for (final category in azkarCategories)
             Container(
               padding: const EdgeInsets.all(20.0),
-              margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 30),
+              margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
+              width: 500,
               child: TextButton(
                 onPressed: () {
                   Navigator.of(context).push(
@@ -44,6 +45,8 @@ class AzkarCategoriesScreen extends StatelessWidget {
                 ),
                 child: Text(
                   category.title,
+                  textDirection: TextDirection.rtl,
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
