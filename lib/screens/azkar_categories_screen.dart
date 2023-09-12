@@ -13,19 +13,23 @@ class AzkarCategoriesScreen extends StatelessWidget {
     return Scaffold(
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+          crossAxisCount: size.width <= 768 ? 2 : 3,
           childAspectRatio: size.width <= 768 ? 1 : 4,
           // childAspectRatio: 3 / 2, // 3 rows & 2 columns
-          // crossAxisSpacing: 20,
-          // mainAxisSpacing: 20,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
         ),
         // shrinkWrap: true,
         children: [
           for (final category in azkarCategories)
-            Container(
-              padding: const EdgeInsets.all(20.0),
-              margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
-              width: 500,
+            Card(
+              elevation: 15,
+              shadowColor: Palette.backgroundColor2,
+              clipBehavior: Clip.none,
+              margin: const EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
               child: TextButton(
                 onPressed: () {
                   Navigator.of(context).push(
@@ -40,7 +44,7 @@ class AzkarCategoriesScreen extends StatelessWidget {
                 style: TextButton.styleFrom(
                   backgroundColor: Palette.cardBackgroundColor,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 child: Text(
@@ -55,6 +59,39 @@ class AzkarCategoriesScreen extends StatelessWidget {
                 ),
               ),
             ),
+
+          // Container(
+          //   padding: const EdgeInsets.all(5.0),
+          //   margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          //   child: TextButton(
+          //     onPressed: () {
+          //       Navigator.of(context).push(
+          //         MaterialPageRoute(
+          //           builder: (context) => AzkarDetails(
+          //             appBarTitle: category.title,
+          //             azkarList: category.listData,
+          //           ),
+          //         ),
+          //       );
+          //     },
+          //     style: TextButton.styleFrom(
+          //       backgroundColor: Palette.cardBackgroundColor,
+          //       shape: RoundedRectangleBorder(
+          //         borderRadius: BorderRadius.circular(15),
+          //       ),
+          //     ),
+          //     child: Text(
+          //       category.title,
+          //       textDirection: TextDirection.rtl,
+          //       textAlign: TextAlign.center,
+          //       style: const TextStyle(
+          //         fontSize: 18,
+          //         fontWeight: FontWeight.bold,
+          //         color: Palette.whiteColor,
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
