@@ -9,5 +9,5 @@
 
 </div>
 
-## Islamic App to remember Allah.
+Islamic App to remember Allah.
 
