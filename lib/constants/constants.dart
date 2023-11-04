@@ -1,9 +1,9 @@
 class Constants {
-  // App Name
+  // App Name //
   static const appName = "Zakirin";
   static const appNameArabic = "ذَّاكِرِينَ";
 
-  // Fonts
+  // Fonts //
   static const fontAlmarai = "Almarai";
   static const fontAmiri = "Amiri";
   static const fontNaskh = "Naskh";
