@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/components/azkar_card_item.dart';
+import 'package:zakirin/components/zikr_card.dart';
 import 'package:zakirin/models/zikr_model.dart';
 import 'package:zakirin/theme/palette.dart';
 
@@ -46,7 +46,7 @@ class DetailsPage extends StatelessWidget {
           return SingleChildScrollView(
             child: Column(
               children: [
-                AzkarCardItem(
+                ZikrCard(
                   content: azkarList[index].content,
                   count: azkarList[index].count,
                 ),

@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/constants/constants.dart';
 import 'package:zakirin/theme/palette.dart';
 
-class AzkarCardItem extends StatefulWidget {
+class ZikrCard extends StatefulWidget {
   final String content;
   final int count;
 
-  const AzkarCardItem({
+  const ZikrCard({
     super.key,
     required this.content,
     required this.count,
   });
 
   @override
-  State<AzkarCardItem> createState() => _AzkarCardItemState();
+  State<ZikrCard> createState() => _ZikrCardState();
 }
 
-class _AzkarCardItemState extends State<AzkarCardItem> {
+class _ZikrCardState extends State<ZikrCard> {
   late String azkarContent = widget.content;
   late int buttonNumber = widget.count;
   bool isContainerVisible = true;
@@ -55,7 +56,7 @@ class _AzkarCardItemState extends State<AzkarCardItem> {
                 textDirection: TextDirection.rtl,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontFamily: 'Amiri',
+                  fontFamily: Constants.fontAmiri,
                   fontSize: 18,
                   color: Colors.white,
                   height: 1.8,

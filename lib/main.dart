@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/constants/constants.dart';
 import 'package:zakirin/pages/home_page.dart';
 import 'package:zakirin/theme/palette.dart';
 
@@ -12,10 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Zakirin',
+      title: Constants.appName,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        fontFamily: 'Almarai',
+        fontFamily: Constants.fontAlmarai,
         scaffoldBackgroundColor: Palette.backgroundColor,
         useMaterial3: true,
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/constants/constants.dart';
 import 'package:zakirin/pages/categories_page.dart';
 import 'package:zakirin/theme/palette.dart';
 
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'ذَّاكِرِينَ',
+          Constants.appNameArabic,
           textDirection: TextDirection.rtl,
           style: TextStyle(
             fontSize: 30,
