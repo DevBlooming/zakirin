@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/theme/pallete.dart';
+import 'package:zakirin/theme/palette.dart';
 
 class AzkarCardItem extends StatefulWidget {
   final String content;
@@ -58,7 +58,7 @@ class _AzkarCardItemState extends State<AzkarCardItem> {
                   fontFamily: 'Amiri',
                   fontSize: 18,
                   color: Colors.white,
-                  height: 1.6,
+                  height: 1.8,
                 ),
               ),
               Container(

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/data/azkar_data.dart';
-import 'package:zakirin/screens/azkar_details.dart';
-import 'package:zakirin/theme/pallete.dart';
+import 'package:zakirin/data/data.dart';
+import 'package:zakirin/pages/details_page.dart';
+import 'package:zakirin/theme/palette.dart';
 
-class AzkarCategoriesScreen extends StatelessWidget {
-  const AzkarCategoriesScreen({super.key});
+class CategoriesPage extends StatelessWidget {
+  const CategoriesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class AzkarCategoriesScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => AzkarDetails(
+                      builder: (context) => DetailsPage(
                         appBarTitle: category.title,
                         azkarList: category.listData,
                       ),

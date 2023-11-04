@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/screens/azkar_categories_screen.dart';
-import 'package:zakirin/theme/pallete.dart';
+import 'package:zakirin/pages/categories_page.dart';
+import 'package:zakirin/theme/palette.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       // body: const MorningAzkarScreen(),
-      body: const AzkarCategoriesScreen(),
+      body: const CategoriesPage(),
     );
   }
 }

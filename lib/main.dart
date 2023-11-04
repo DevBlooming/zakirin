@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/screens/home_screen.dart';
-import 'package:zakirin/theme/pallete.dart';
+import 'package:zakirin/pages/home_page.dart';
+import 'package:zakirin/theme/palette.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Palette.backgroundColor,
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/theme/pallete.dart';
-import 'package:zakirin/widgets/azkar_card_item.dart';
+import 'package:zakirin/components/azkar_card_item.dart';
+import 'package:zakirin/models/zikr_model.dart';
+import 'package:zakirin/theme/palette.dart';
 
-class AzkarDetails extends StatelessWidget {
+class DetailsPage extends StatelessWidget {
   final String appBarTitle;
-  final List<Map<String, dynamic>>? azkarList;
+  final List<ZikrModel> azkarList;
 
-  const AzkarDetails({
+  const DetailsPage({
     super.key,
     required this.appBarTitle,
     required this.azkarList,
@@ -40,14 +41,14 @@ class AzkarDetails extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: azkarList!.length,
+        itemCount: azkarList.length,
         itemBuilder: (context, index) {
           return SingleChildScrollView(
             child: Column(
               children: [
                 AzkarCardItem(
-                  content: azkarList![index]['content'].toString(),
-                  count: azkarList![index]['count'],
+                  content: azkarList[index].content,
+                  count: azkarList[index].count,
                 ),
               ],
             ),

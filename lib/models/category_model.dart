@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/models/zikr_model.dart';
 
-class Category {
-  const Category({
+class CategoryModel {
+  const CategoryModel({
     required this.id,
     required this.title,
     required this.listData,
@@ -10,6 +11,6 @@ class Category {
 
   final String id;
   final String title;
-  final List<Map<String, dynamic>> listData;
+  final List<ZikrModel> listData;
   final Color color;
 }
