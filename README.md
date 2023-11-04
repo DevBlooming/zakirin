@@ -4,9 +4,17 @@
 
 </div>
 
----
+
+
+<div align="center">
 
 # Zakirin | ذَّاكِرِينَ
 
-Islamic App to remember Allah.
+</div>
+
+---
+
+
+
+## Islamic App to remember Allah.
 
