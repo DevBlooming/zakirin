@@ -11,3 +11,5 @@
 
 Islamic App to remember Allah.
 
+## Features
+- Azkar
