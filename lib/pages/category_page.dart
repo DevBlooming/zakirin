@@ -3,8 +3,8 @@ import 'package:zakirin/data/data.dart';
 import 'package:zakirin/pages/details_page.dart';
 import 'package:zakirin/theme/palette.dart';
 
-class CategoriesPage extends StatelessWidget {
-  const CategoriesPage({super.key});
+class CategoryPage extends StatelessWidget {
+  const CategoryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +35,8 @@ class CategoriesPage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => DetailsPage(
-                        appBarTitle: category.title,
-                        azkarList: category.listData,
+                        appBarTitle: category.categoryName,
+                        azkarList: category.azkarListName,
                       ),
                     ),
                   );
@@ -48,7 +48,7 @@ class CategoriesPage extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  category.title,
+                  category.categoryName,
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
