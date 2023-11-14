@@ -1,6 +1,6 @@
 <div align="center">
 
-![icon](https://github.com/DevBlooming/zakirin/blob/main/assets/images/logo/logo.webp?raw=true)
+![icon](https://github.com/DevBlooming/zakirin/blob/main/assets/images/logo/logo-144.webp?raw=true)
 
 </div>
 <div align="center">
