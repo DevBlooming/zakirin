@@ -9,9 +9,10 @@
 
 </div>
 
-Open source Islamic App to remember Allah.
+Free. Cross-platform. Open source Islamic App to remember Allah.
 
 ## Main Features
+- Cross-platform
 - Simple and elegant UI
 - Azkar
 - More features will come soon...

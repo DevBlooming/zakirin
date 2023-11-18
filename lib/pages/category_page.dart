@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zakirin/data/data.dart';
 import 'package:zakirin/pages/details_page.dart';
-import 'package:zakirin/theme/palette.dart';
+import 'package:zakirin/utils/constants.dart';
 
 class CategoryPage extends StatelessWidget {
   const CategoryPage({super.key});
@@ -24,7 +24,7 @@ class CategoryPage extends StatelessWidget {
           for (final category in azkarCategories)
             Card(
               elevation: 15,
-              shadowColor: Palette.backgroundColor2,
+              shadowColor: Constants.backgroundColor2,
               clipBehavior: Clip.none,
               margin: const EdgeInsets.all(10),
               shape: RoundedRectangleBorder(
@@ -42,7 +42,7 @@ class CategoryPage extends StatelessWidget {
                   );
                 },
                 style: TextButton.styleFrom(
-                  backgroundColor: Palette.cardBackgroundColor,
+                  backgroundColor: Constants.cardBackgroundColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -54,7 +54,7 @@ class CategoryPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Palette.whiteColor,
+                    color: Colors.white,
                   ),
                 ),
               ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zakirin/components/zikr_card.dart';
 import 'package:zakirin/models/zikr_model.dart';
-import 'package:zakirin/theme/palette.dart';
+import 'package:zakirin/utils/constants.dart';
 
 class DetailsPage extends StatelessWidget {
   final String appBarTitle;
@@ -23,7 +23,7 @@ class DetailsPage extends StatelessWidget {
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
-            color: Palette.whiteColor,
+            color: Colors.white,
           ),
         ),
         centerTitle: true,
@@ -33,8 +33,8 @@ class DetailsPage extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Palette.darkSkies1,
-                Palette.darkSkies2,
+                Constants.darkSkies1,
+                Constants.darkSkies2,
               ],
             ),
           ),
