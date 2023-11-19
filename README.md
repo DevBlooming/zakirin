@@ -1,15 +1,22 @@
 <div align="center">
-
-![icon](https://github.com/DevBlooming/zakirin/blob/main/assets/images/logo/logo-144.webp?raw=true)
-
+  <a href="https://github.com/DevBlooming/zakirin/">
+    <img
+      src="https://github.com/DevBlooming/zakirin/blob/main/assets/images/logo/logo-144.webp?raw=true"
+      alt="Zakirin"
+      height="144"
+    />
+  </a>
+  <h2>
+    <strong>
+      Zakirin  |  ذَّاكِرِينَ
+    </strong>
+  </h2>
+  <b>
+    Free. Cross-platform. Open source Islamic App to remember Allah.
+  </b>
 </div>
-<div align="center">
 
-# Zakirin | ذَّاكِرِينَ
 
-</div>
-
-Free. Cross-platform. Open source Islamic App to remember Allah.
 
 ## Main Features
 - **Open-source and lightweight**
@@ -19,4 +26,4 @@ Free. Cross-platform. Open source Islamic App to remember Allah.
 - **More features will come soon...**
 
 ## License
-Zakirin is licensed under the GNU General Public License v3.0
+**Zakirin** is licensed under the GNU General Public License v3.0
