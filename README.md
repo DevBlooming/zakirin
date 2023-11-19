@@ -12,10 +12,11 @@
 Free. Cross-platform. Open source Islamic App to remember Allah.
 
 ## Main Features
-- Cross-platform
-- Simple and elegant UI
-- Azkar
-- More features will come soon...
+- **Open-source and lightweight**
+- **Cross-platform support**
+- **Simple and elegant UI**
+- **Azkar**
+- **More features will come soon...**
 
 ## License
 Zakirin is licensed under the GNU General Public License v3.0
