@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/models/zikr_model.dart';
+import 'package:zakirin/features/azkar/data/models/zikr_model.dart';
 
 class CategoryModel {
   const CategoryModel({

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/utils/constants.dart';
+import 'package:zakirin/core/utils/styles.dart';
 
 class ZikrCard extends StatefulWidget {
   final String content;
@@ -37,7 +37,7 @@ class _ZikrCardState extends State<ZikrCard> {
       visible: isContainerVisible,
       child: InkWell(
         onTap: buttonNumber > 0 ? decreaseButtonNumber : null,
-        splashColor: Constants.servQuick2,
+        splashColor: Styles.secondaryColor,
         borderRadius: BorderRadius.circular(16),
         child: Container(
           alignment: Alignment.center,
@@ -45,7 +45,7 @@ class _ZikrCardState extends State<ZikrCard> {
           padding: const EdgeInsets.all(20.0),
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           decoration: BoxDecoration(
-            color: Constants.cardBackgroundColor,
+            color: Styles.tertiaryColor,
             borderRadius: BorderRadius.circular(16),
           ),
           child: Column(
@@ -55,9 +55,8 @@ class _ZikrCardState extends State<ZikrCard> {
                 textDirection: TextDirection.rtl,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontFamily: Constants.fontAmiri,
+                  fontFamily: Styles.fontAmiri,
                   fontSize: 18,
-                  color: Colors.white,
                   height: 1.8,
                 ),
               ),
@@ -68,8 +67,8 @@ class _ZikrCardState extends State<ZikrCard> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Constants.servQuick1,
-                      Constants.servQuick2,
+                      Styles.secondaryColor,
+                      Styles.secondaryColor,
                     ],
                   ),
                   borderRadius: BorderRadius.circular(7),

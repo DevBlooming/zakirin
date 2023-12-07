@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/pages/home_page.dart';
-import 'package:zakirin/utils/constants.dart';
+import 'package:zakirin/core/utils/app_router.dart';
+import 'package:zakirin/core/utils/constants.dart';
+import 'package:zakirin/core/utils/styles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +12,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
       title: Constants.appName,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        fontFamily: Constants.fontAlmarai,
-        scaffoldBackgroundColor: Constants.backgroundColor,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Styles.primaryColor,
+          brightness: Brightness.dark,
+        ),
+        // fontFamily: Assets.assetsFontsAlmaraiRegular,
+        fontFamily: Styles.fontAlmarai,
+        scaffoldBackgroundColor: Styles.primaryColor,
         useMaterial3: true,
       ),
-      home: const HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }

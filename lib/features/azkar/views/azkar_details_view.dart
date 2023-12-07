@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/components/zikr_card.dart';
-import 'package:zakirin/models/zikr_model.dart';
-import 'package:zakirin/utils/constants.dart';
+import 'package:zakirin/core/utils/styles.dart';
+import 'package:zakirin/features/azkar/data/models/zikr_model.dart';
+import 'package:zakirin/features/azkar/views/widgets/zikr_card.dart';
 
-class DetailsPage extends StatelessWidget {
+class AzkarDetailsView extends StatelessWidget {
   final String appBarTitle;
   final List<ZikrModel> azkarList;
 
-  const DetailsPage({
+  const AzkarDetailsView({
     super.key,
     required this.appBarTitle,
     required this.azkarList,
@@ -33,8 +33,8 @@ class DetailsPage extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Constants.darkSkies1,
-                Constants.darkSkies2,
+                Styles.primaryColor,
+                Styles.tertiaryColor,
               ],
             ),
           ),

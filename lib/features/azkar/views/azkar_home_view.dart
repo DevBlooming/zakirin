@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:zakirin/pages/category_page.dart';
-import 'package:zakirin/utils/constants.dart';
+import 'package:zakirin/core/utils/constants.dart';
+import 'package:zakirin/core/utils/styles.dart';
+import 'package:zakirin/features/azkar/views/azkar_category_view.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class AzkarHomeView extends StatelessWidget {
+  const AzkarHomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            // color: Colors.white,
           ),
         ),
         centerTitle: true,
@@ -25,15 +26,15 @@ class HomePage extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Constants.darkSkies1,
-                Constants.darkSkies2,
+                Styles.primaryColor,
+                Styles.tertiaryColor,
               ],
             ),
           ),
         ),
       ),
       // body: const MorningAzkarScreen(),
-      body: const CategoryPage(),
+      body: const AzkarCategoryView(),
     );
   }
 }

@@ -1,5 +1,5 @@
-import 'package:zakirin/models/category_model.dart';
-import 'package:zakirin/models/zikr_model.dart';
+import 'package:zakirin/features/azkar/data/models/category_model.dart';
+import 'package:zakirin/features/azkar/data/models/zikr_model.dart';
 
 const List<ZikrModel> morningAzkar = [
   ZikrModel(
