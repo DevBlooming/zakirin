@@ -13,10 +13,16 @@ abstract class Styles {
   static const String fontAlmarai = 'Almarai';
   static const String fontReemKufi = 'ReemKufi';
 
+  static const textStyle8 = TextStyle(
+    fontSize: 8,
+  );
+
+  static const textStyle12 = TextStyle(
+    fontSize: 12,
+  );
+
   static const textStyle14 = TextStyle(
     fontSize: 14,
-    fontFamily: fontAmiri,
-    fontWeight: FontWeight.bold,
   );
 
   static const textStyle16 = TextStyle(

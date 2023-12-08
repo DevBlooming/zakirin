@@ -13,6 +13,16 @@ class SlidingText extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
+    TextStyle showSplashTextResponsive() {
+      if (size.width <= 280) {
+        return Styles.textStyle8;
+      } else if (size.width <= 430) {
+        return Styles.textStyle12;
+      } else {
+        return Styles.textStyle30;
+      }
+    }
+
     return AnimatedBuilder(
       animation: slidingAnimation,
       builder: (context, _) {
@@ -26,8 +36,7 @@ class SlidingText extends StatelessWidget {
             ),
             child: Text(
               '﴿ وَالذَّاكِرِينَ اللَّهَ كَثِيراً وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْراً عَظِيماً ﴾',
-              style:
-                  size.width <= 768 ? Styles.textStyle16 : Styles.textStyle30,
+              style: showSplashTextResponsive(),
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
             ),
