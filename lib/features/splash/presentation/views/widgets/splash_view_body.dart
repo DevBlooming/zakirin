@@ -34,8 +34,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,11 +41,11 @@ class _SplashViewBodyState extends State<SplashViewBody>
         ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: AspectRatio(
-            aspectRatio: size.width <= 768 ? 3 : 1,
+            aspectRatio: 3,
             child: Image.asset(Assets.assetsImagesLogoCurved192),
           ),
         ),
-        const SizedBox(height: 20),
+        // const SizedBox(height: 20),
         SlidingText(slidingAnimation: slidingAnimation),
       ],
     );

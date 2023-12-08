@@ -11,7 +11,7 @@ class SlidingText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
 
     return AnimatedBuilder(
       animation: slidingAnimation,
@@ -21,12 +21,13 @@ class SlidingText extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             decoration: BoxDecoration(
-              color: Styles.primaryColor,
+              color: Styles.tertiaryColor,
               borderRadius: BorderRadius.circular(50),
             ),
-            child: const Text(
+            child: Text(
               '﴿ وَالذَّاكِرِينَ اللَّهَ كَثِيراً وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْراً عَظِيماً ﴾',
-              style: Styles.textStyle14,
+              style:
+                  size.width <= 768 ? Styles.textStyle16 : Styles.textStyle30,
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
             ),

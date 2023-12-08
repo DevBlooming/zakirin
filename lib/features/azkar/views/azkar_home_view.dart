@@ -11,7 +11,7 @@ class AzkarHomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          Constants.appNameArabic,
+          Constants.azkarSectionTitle,
           textDirection: TextDirection.rtl,
           style: TextStyle(
             fontSize: 30,
