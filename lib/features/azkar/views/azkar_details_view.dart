@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zakirin/core/helpers/custom_app_bar.dart';
 import 'package:zakirin/features/azkar/data/models/zikr_model.dart';
-import 'package:zakirin/features/azkar/views/widgets/custom_azkar_item.dart';
+import 'package:zakirin/features/azkar/views/widgets/azkar_item.dart';
 
 class AzkarDetailsView extends StatelessWidget {
   final String appBarTitle;
@@ -23,7 +23,7 @@ class AzkarDetailsView extends StatelessWidget {
           return SingleChildScrollView(
             child: Column(
               children: [
-                CustomAzkarItem(
+                AzkarItem(
                   content: azkarList[index].content,
                   count: azkarList[index].count,
                 ),

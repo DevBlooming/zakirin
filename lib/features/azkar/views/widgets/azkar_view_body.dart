@@ -4,14 +4,14 @@ import 'package:zakirin/core/utils/styles.dart';
 import 'package:zakirin/features/azkar/data/azkar_data.dart';
 import 'package:zakirin/features/azkar/views/azkar_details_view.dart';
 
-class AzkarHomeViewBody extends StatefulWidget {
-  const AzkarHomeViewBody({super.key});
+class AzkarViewBody extends StatefulWidget {
+  const AzkarViewBody({super.key});
 
   @override
-  State<AzkarHomeViewBody> createState() => _AzkarHomeViewBodyState();
+  State<AzkarViewBody> createState() => _AzkarViewBodyState();
 }
 
-class _AzkarHomeViewBodyState extends State<AzkarHomeViewBody> {
+class _AzkarViewBodyState extends State<AzkarViewBody> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;

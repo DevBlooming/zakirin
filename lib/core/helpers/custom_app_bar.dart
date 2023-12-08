@@ -9,7 +9,6 @@ PreferredSizeWidget customAppBar(String title) {
       style: const TextStyle(
         fontSize: 30,
         fontWeight: FontWeight.bold,
-        // color: Colors.white,
       ),
     ),
     centerTitle: true,

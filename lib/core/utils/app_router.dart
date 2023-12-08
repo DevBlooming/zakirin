@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:zakirin/features/azkar/views/azkar_home_view.dart';
+import 'package:zakirin/features/azkar/views/azkar_view.dart';
 import 'package:zakirin/features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
@@ -16,7 +16,7 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: azkarHomeView,
-        builder: (context, state) => const AzkarHomeView(),
+        builder: (context, state) => const AzkarView(),
       ),
       // GoRoute(
       //   path: azkarDetailsView,

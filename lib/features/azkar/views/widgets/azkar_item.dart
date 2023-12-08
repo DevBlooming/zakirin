@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zakirin/core/utils/styles.dart';
 
-class CustomAzkarItem extends StatefulWidget {
-  const CustomAzkarItem({
+class AzkarItem extends StatefulWidget {
+  const AzkarItem({
     super.key,
     required this.content,
     required this.count,
@@ -12,10 +12,10 @@ class CustomAzkarItem extends StatefulWidget {
   final int count;
 
   @override
-  State<CustomAzkarItem> createState() => _CustomAzkarItemState();
+  State<AzkarItem> createState() => _AzkarItemState();
 }
 
-class _CustomAzkarItemState extends State<CustomAzkarItem> {
+class _AzkarItemState extends State<AzkarItem> {
   late String azkarContent = widget.content;
   late int buttonNumber = widget.count;
   bool isContainerVisible = true;
