@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
           seedColor: Styles.primaryColor,
           brightness: Brightness.dark,
         ),
-        // fontFamily: Assets.assetsFontsAlmaraiRegular,
         fontFamily: Styles.fontAlmarai,
         scaffoldBackgroundColor: Styles.primaryColor,
         useMaterial3: true,

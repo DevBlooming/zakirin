@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/core/utils/assets.dart';
 import 'package:zakirin/core/utils/styles.dart';
 import 'package:zakirin/features/azkar/data/azkar_data.dart';
 import 'package:zakirin/features/azkar/views/azkar_details_view.dart';
@@ -66,7 +67,7 @@ class _AzkarCategoryViewState extends State<AzkarCategoryView> {
                     Expanded(
                       child: AspectRatio(
                         aspectRatio: size.height <= 768 ? 3 : 1,
-                        child: Image.asset('assets/images/logo/logo.png'),
+                        child: Image.asset(Assets.assetsImagesLogoAppLogo),
                       ),
                     ),
                     // const SizedBox(width: 10),

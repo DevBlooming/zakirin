@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:zakirin/core/utils/styles.dart';
 
 class ZikrCard extends StatefulWidget {
-  final String content;
-  final int count;
-
   const ZikrCard({
     super.key,
     required this.content,
     required this.count,
   });
+
+  final String content;
+  final int count;
 
   @override
   State<ZikrCard> createState() => _ZikrCardState();

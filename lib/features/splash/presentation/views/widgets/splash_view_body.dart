@@ -34,6 +34,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,8 +43,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
         ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: AspectRatio(
-            aspectRatio: 3,
-            child: Image.asset(Assets.assetsImagesLogo),
+            aspectRatio: size.width <= 768 ? 3 : 1,
+            child: Image.asset(Assets.assetsImagesLogoCurved192),
           ),
         ),
         const SizedBox(height: 20),
@@ -67,7 +69,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(const Duration(seconds: 5), () {
-      GoRouter.of(context).pushReplacement(AppRouter.azkarHomeView);
+      GoRouter.of(context).push(AppRouter.azkarHomeView);
     });
   }
 }
