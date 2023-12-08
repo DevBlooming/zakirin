@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:zakirin/core/helpers/custom_app_bar.dart';
 import 'package:zakirin/core/utils/constants.dart';
-import 'package:zakirin/core/utils/styles.dart';
-import 'package:zakirin/features/azkar/views/azkar_category_view.dart';
+import 'package:zakirin/features/azkar/views/widgets/azkar_home_view_body.dart';
 
 class AzkarHomeView extends StatelessWidget {
   const AzkarHomeView({super.key});
@@ -9,32 +9,9 @@ class AzkarHomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          Constants.azkarSectionTitle,
-          textDirection: TextDirection.rtl,
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-            // color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Styles.primaryColor,
-                Styles.tertiaryColor,
-              ],
-            ),
-          ),
-        ),
-      ),
+      appBar: customAppBar(Constants.azkarSectionTitle),
       // body: const MorningAzkarScreen(),
-      body: const AzkarCategoryView(),
+      body: const AzkarHomeViewBody(),
     );
   }
 }
