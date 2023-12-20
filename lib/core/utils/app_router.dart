@@ -4,7 +4,7 @@ import 'package:zakirin/features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
   static const homeView = '/home';
-  static const azkarHomeView = '/azkarHome';
+  static const azkarHomeView = '/azkarView';
   static const azkarDetailsView = '/azkarDetails';
   static const searchView = '/search';
 
