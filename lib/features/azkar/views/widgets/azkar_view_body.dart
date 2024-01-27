@@ -14,7 +14,7 @@ class AzkarViewBody extends StatefulWidget {
 class _AzkarViewBodyState extends State<AzkarViewBody> {
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     int showCardResponsive() {
       if (size.width <= 280) {

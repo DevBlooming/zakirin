@@ -11,7 +11,7 @@ class SlidingText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     TextStyle showSplashTextResponsive() {
       if (size.width <= 280) {
