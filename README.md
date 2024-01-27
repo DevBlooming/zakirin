@@ -18,9 +18,10 @@
 
 ## Main Features
 
-- **Open-source and lightweight**
+- **Free and Open-source**
 - **Cross-platform support**
-- **Simple and elegant UI**
+- **Simple and light**
+- **Elegant UI**
 - **Azkar**
 - **More features will come soon...**
 
